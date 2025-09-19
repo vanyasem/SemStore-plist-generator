@@ -8,11 +8,11 @@ environment:
 
 dependencies:
   shelf: ^1.4.2
-  shelf_router: ^1.1.2
+  shelf_router: ^1.1.4
 
   propertylistserialization: ^1.4.1
 
 dev_dependencies:
   fl_common_lint: ^1.8.0
 
-  http: ^1.2.2
+  http: ^1.5.0
