@@ -6,12 +6,7 @@ import 'package:shelf_router/shelf_router.dart';
 
 // Configure routes.
 final _router = Router()
-  ..get('/', _rootHandler)
-  ..get('/echo/<message>', _echoHandler);
-
-Response _rootHandler(Request req) {
-  return Response.ok('Hello, World!\n');
-}
+  ..get('/<message>', _echoHandler);
 
 Response _echoHandler(Request request) {
   final message = request.params['message'];
