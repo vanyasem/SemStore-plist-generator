@@ -9,7 +9,10 @@ final Router _router = Router()..get('/<message>', _echoHandler);
 
 Response _echoHandler(final Request request) {
   final String? message = request.params['message'];
-  return Response.ok('$message\n');
+  return Response.ok(
+    '$message\n',
+    headers: <String, Object>{'Content-Type': 'application/octet-stream'},
+  );
 }
 
 void main(final List<String> args) async {
