@@ -11,5 +11,6 @@ dependencies:
   shelf_router: ^1.1.2
 
 dev_dependencies:
+  fl_common_lint: ^1.8.0
+
   http: ^1.2.2
-  lints: ^6.0.0
